@@ -5,12 +5,13 @@ export default {
   output: 'export',
   trailingSlash: true,
 
+  // CRITICAL CHANGE: This moves the site to "/formation"
+  basePath: '/formation', 
+
   // Pages can't run image optimization
   images: { unoptimized: true },
 
-  // keep your existing tolerances
+  // Keeping your existing tolerances (important so the build doesn't fail)
   eslint: { ignoreDuringBuilds: true },
   typescript: { ignoreBuildErrors: true },
-
-  // IMPORTANT: no basePath / assetPrefix for a custom domain at the root
 };
